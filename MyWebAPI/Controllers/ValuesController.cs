@@ -20,6 +20,11 @@ namespace MyWebAPI.Controllers
         {
             return string.Format("Valor {0}", id) ;
         }
+        
+        public string GetTwoStrings(string a, string b)
+        {
+            return string.Format("{0}{1}", a, b); //rama 20171101
+        }
 
         // POST api/values
         public void Post([FromBody]string value)
