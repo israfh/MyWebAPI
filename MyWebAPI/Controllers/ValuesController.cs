@@ -18,7 +18,7 @@ namespace MyWebAPI.Controllers
         // GET api/values/5
         public string Get(int id)
         {
-            return "value";
+            return string.Format("Valor {0}", id) ;
         }
 
         // POST api/values
