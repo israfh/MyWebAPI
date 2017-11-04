@@ -1,4 +1,6 @@
-﻿@model MyWebAPI.Models.PedidoViewModel
+﻿@using MyWebAPI.Helpers
+
+@model MyWebAPI.Models.PedidoViewModel
 
 @{
     ViewBag.Title = "Editar";
@@ -12,6 +14,11 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
+
+        @Html.MyCheckBox("prueba")
+
+        @Html.MyInput("miCheck","valor")
+
         <h4>Pedido</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })

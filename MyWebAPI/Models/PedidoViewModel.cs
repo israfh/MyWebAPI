@@ -16,4 +16,10 @@ namespace MyWebAPI.Models
         public long Cantidad { get; set; }
 
     }
+
+    public class Item
+    {
+        public long Id { get; set; }
+        public long? IdDpte { get; set; }
+    }
 }
