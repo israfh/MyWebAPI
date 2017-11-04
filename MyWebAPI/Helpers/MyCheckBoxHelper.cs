@@ -7,6 +7,7 @@ namespace MyWebAPI.Helpers
 {
     public static class MyCheckBoxHelper
     {
+        /*MyCheckBox*/
         public static IHtmlString MyCheckBox(this HtmlHelper helper, string id)
         {
             return new HtmlString(string.Format("<span>{0}</span>", id));
